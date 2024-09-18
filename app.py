@@ -1,6 +1,6 @@
 # app.py
 def main():
-    print("Hello, GitHub Actions v2!")
+    print("Hello, World! Actualización automática desde GitHub Actions!")
 
 if __name__ == "__main__":
     main()
