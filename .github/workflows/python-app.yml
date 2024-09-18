@@ -20,6 +20,19 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install dependencies
+      run: |
+        pip install flake8
+
+    - name: Check Python syntax
+      run: |
+        python -m py_compile app.py
+
+    - name: Run flake8
+      run: |
+        flake8 .
+
     - name: Run the Python script
       run: |
         python app.py
+
